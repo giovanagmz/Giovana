@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Usuários</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🔍</div>
+    <h1>DASHBOARD USERS</h1>
+  </header>
+
+  <main>
+    <section class="cards">
+      <div class="card">
+        <h3>Total de Usuários</h3>
+        <p id="totalUsers">0</p>
+      </div>
+      <div class="card">
+        <h3>Cidades Únicas</h3>
+        <p id="uniqueCities">0</p>
+      </div>
+      <div class="card">
+        <h3>Empresas Diferentes</h3>
+        <p id="uniqueCompanies">0</p>
+      </div>
+    </section>
+
+    <section class="table-section">
+      <h2>Lista de Usuários</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Cidade</th>
+            <th>Empresa</th>
+          </tr>
+        </thead>
+        <tbody id="userTable">
+          <!-- Populado pelo JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
